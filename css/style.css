@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body{
+	background: linear-gradient(45deg,#3aeaf0, #c0f0fc, #98ddf1, #96e1fc , #63dbff, #18c5fa);
+	animation: gradient 16s linear infinite;
+    animation-direction: alternate;
+	background-repeat: no-repeat;
+	height: 700px;
+}
+@keyframes gradient {
+    0% {background-position: 0%}
+    100% {background-position: 100%}
+}
+
+.intro{
+	background:transparent;
+}
+
+
+h1{
+	color: #4C4B4B;
+	font-weight: bold;
+}
+h3{
+	color:#2F363F;
+}
+button{
+	border:none;
+	border-radius: 8px;
+	padding: 10px;
+	background:#7B8788; 
+	color:white;
+	letter-spacing: 0.5px;
+	font-size: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 90%;
+	transition: 0.5s;
+}
+button:hover,h1:hover{
+	transform: scale(1.1);
+}
+button:hover{
+	background-color:#4C4B4B;
+}
+
+
+.card {
+
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	height: 380px;
+	width: 19%;
+	border-radius: 5px;
+	background: transparent;
+	margin-right: 20px;
+	margin-left: 20px;
+	display: flex;
+	justify-content: center;
+	
+  }
+  .center {
+    margin:auto;
+}
+.left {
+    margin:auto auto auto 70px;
+}
+.right {
+    margin:auto 70px auto auto;
+}
+  .card:hover {
+	box-shadow: 0 10px 18px 0 rgba(0,0,0,0.2);
+  }
+  
+  img {
+	border-radius: 5px 5px 0 0;
+	
+  }
+  
+  .cont{
+	padding: 2px 16px;
+  }
+
+
+footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	color:#586776;
+	background-color:#EAF0F1;
+	letter-spacing: 0.5px;
+	margin-bottom: 0px;
+}
+footer p{
+	margin: 0;
+	font-size: 15px;
+}
+
+.about{
+	font-family: 'Lato', sans-serif;
+	padding: 3% 7%;
+	margin: auto;
+	margin-top: 7%;
+	border: #4C4B4B double;
+	border-radius: 20px;
+	height: 70%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

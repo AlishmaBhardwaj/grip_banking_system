@@ -1,0 +1,112 @@
+body{
+	background: linear-gradient(45deg,#3aeaf0, #c0f0fc, #98ddf1, #96e1fc , #63dbff, #18c5fa);
+	animation: gradient 16s linear infinite;
+    animation-direction: alternate;
+	background-repeat: no-repeat;
+	height: 700px;
+}
+@keyframes gradient {
+    0% {background-position: 0%}
+    100% {background-position: 100%}
+}
+
+
+button,input {
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+.background {
+  width: 100%;
+  display: flex;
+  align-self: center;
+}
+
+.container1 {
+  flex: 0 1 500px;
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+  
+}
+
+.container2 {
+    flex: 0 1 700px;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    
+  }
+
+.screen-body:hover{
+  box-shadow: 5px 7px 7px rgba(0, 0, 0, .30);
+}
+
+.screen-body {
+  display: flex;
+}
+
+.screen-body-item {
+  flex: 1;
+  padding: 10px;
+}
+.app-form-group {
+    font-size: 16px;
+    text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.app-form-control{
+  width: 100%;
+  padding: 12px 0;
+  border-bottom: 1px solid #3a3a3a;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.app-form-button {
+    background-color: #000000;
+  margin-left: 20px;
+  color: rgb(255, 250, 250);
+  font-size: 16px;
+  padding: 5px;
+  width: 30%;
+  cursor: pointer;
+  outline: none;
+}
+
+.app-form-button:hover {
+    background-color: #000000;
+  box-shadow: 5px 7px 7px rgba(62, 180, 248, 0.3);
+}
+
+@media screen and (max-width: 520px) {
+  *{
+    letter-spacing:1px;
+  }
+  .container{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+  }
+  .screen-body {
+    flex-direction: column;
+  }
+
+  .screen-body-item.left {
+    margin-bottom: 50px;
+  }
+  .app-form-button{
+    margin-top:5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .screen-body {
+    padding: 40px;
+  }
+
+  .screen-body-item {
+    padding: 0;
+  }
+}
+
